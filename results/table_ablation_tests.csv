@@ -1,0 +1,13 @@
+a,b,m,diff,lo,hi,p,holm
+active_nohaz,active,detection,0.023,-0.01,0.057,0.17106710579818618,1.0
+active_nohaz,active,fp,0.02,0.009,0.031,0.0005790976307986259,0.006949171569583511
+active_nohaz,active,energy,-7.743,-14.353,-1.083,0.07291440423054767,0.7291440423054767
+active_nohaz,active,hazard_exposure,0.006,-0.009,0.021,0.7798274097613157,1.0
+active_nobat,active,detection,0.027,-0.004,0.06,0.12660958281829557,1.0
+active_nobat,active,fp,0.001,-0.007,0.01,0.7755774816537883,1.0
+active_nobat,active,energy,-3.875,-10.465,2.562,0.535439364214799,1.0
+active_nobat,active,hazard_exposure,-0.009,-0.024,0.006,0.6909030152186819,1.0
+active_noreserve,active,detection,-0.002,-0.033,0.031,0.8823945478400033,1.0
+active_noreserve,active,fp,-0.005,-0.013,0.004,0.2711248658491481,1.0
+active_noreserve,active,energy,11.679,4.606,18.937,0.018140894592714736,0.1995498405198621
+active_noreserve,active,hazard_exposure,-0.003,-0.018,0.013,0.8936134235530329,1.0
