@@ -1,0 +1,23 @@
+#VRML_SIM R2023b utf8
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/adept/pioneer3/protos/Pioneer3dx.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+WorldInfo { basicTimeStep 16 }
+Viewpoint { orientation -0.5 0.5 0.7 2.1 position 0 -22 22 }
+TexturedBackground {}
+TexturedBackgroundLight {}
+RectangleArena { floorSize 26 26 }
+Solid { translation 4.202 5.186 0.25 name "distractor0" children [ Shape { appearance PBRAppearance { baseColor 0.6 0.3 0.8 roughness 1 metalness 0 } geometry Box { size 0.5 0.5 0.5 } } ] }
+Solid { translation -3.590 0.968 0.25 name "hazard1" children [ Shape { appearance PBRAppearance { baseColor 1 0.45 0 roughness 1 metalness 0 } geometry Cylinder { height 0.5 radius 0.35 } } ] }
+Solid { translation 7.969 0.653 0.25 name "region2" children [ Shape { appearance PBRAppearance { baseColor 0.7 0.7 0.7 roughness 1 metalness 0 } geometry Cylinder { height 0.05 radius 0.4 } } ] }
+Solid { translation -4.137 -8.442 0.25 name "region3" children [ Shape { appearance PBRAppearance { baseColor 0.7 0.7 0.7 roughness 1 metalness 0 } geometry Cylinder { height 0.05 radius 0.4 } } ] }
+Solid { translation -3.399 5.217 0.25 name "region4" children [ Shape { appearance PBRAppearance { baseColor 0.7 0.7 0.7 roughness 1 metalness 0 } geometry Cylinder { height 0.05 radius 0.4 } } ] }
+Solid { translation -3.324 7.753 0.25 name "victim5" children [ Shape { appearance PBRAppearance { baseColor 0.2 0.4 1 roughness 1 metalness 0 } geometry Capsule { height 0.5 radius 0.25 } } ] }
+Solid { translation -9.827 -0.818 0.25 name "hazard6" children [ Shape { appearance PBRAppearance { baseColor 1 0.45 0 roughness 1 metalness 0 } geometry Cylinder { height 0.5 radius 0.35 } } ] }
+Solid { translation 4.681 7.754 0.25 name "region7" children [ Shape { appearance PBRAppearance { baseColor 0.7 0.7 0.7 roughness 1 metalness 0 } geometry Cylinder { height 0.05 radius 0.4 } } ] }
+Solid { translation 2.503 7.860 0.25 name "distractor8" children [ Shape { appearance PBRAppearance { baseColor 0.6 0.3 0.8 roughness 1 metalness 0 } geometry Box { size 0.5 0.5 0.5 } } ] }
+Solid { translation 0.216 -7.575 0.25 name "region9" children [ Shape { appearance PBRAppearance { baseColor 0.7 0.7 0.7 roughness 1 metalness 0 } geometry Cylinder { height 0.05 radius 0.4 } } ] }
+Solid { translation -9.203 3.668 0.25 name "region10" children [ Shape { appearance PBRAppearance { baseColor 0.7 0.7 0.7 roughness 1 metalness 0 } geometry Cylinder { height 0.05 radius 0.4 } } ] }
+Solid { translation -7.036 2.732 0.25 name "region11" children [ Shape { appearance PBRAppearance { baseColor 0.7 0.7 0.7 roughness 1 metalness 0 } geometry Cylinder { height 0.05 radius 0.4 } } ] }
+Pioneer3dx { translation 0 0 0.1 name "sar_robot" controller "sar_replay" extensionSlot [ GPS {} InertialUnit {} ] }

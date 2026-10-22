@@ -29,6 +29,14 @@ Use `--quick --episodes 20 --sens-episodes 2` for a 15-second smoke test.
 | `sarsim/analyze.py` | Bootstrap CIs, Mann-Whitney + Holm, Cliff's delta, Fisher tests, figures |
 | `results/` | Outputs reported in the chapter (CSV, JSON, figures) |
 
+## Visual replays
+```bash
+python -m sarsim.visualize --scenario D --episode 74 --left static --right active --out viz   # GIF + MP4
+python -m sarsim.make_viewer viz/viewer.html                                                  # interactive HTML viewer
+```
+Episodes shown in `viz/` were chosen to illustrate differences between policies; they are not typical. Averages are in the chapter.
+`webots/` (Webots) and `gazebo/` (Gazebo Harmonic with ROS 2) contain experimental, untested 3-D replays; see their READMEs.
+
 ## Reproducibility
 * Evaluation seed base `20260913`; calibration seed base `777000` (disjoint). Environment layouts depend only on
   (scenario, episode) so all policies face identical layouts; sensor noise is seeded per (scenario, episode, policy).
